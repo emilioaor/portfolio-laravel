@@ -1,0 +1,265 @@
+html, body {
+	height: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1, h2 {
+	font-family: 'Cantata One', serif;
+}
+h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+}
+.form-control {
+	resize: none;
+	border-radius: 2px;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	border-bottom: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	padding-left: 0;
+	color: #888;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+#contact .form-control {
+	margin: 2rem 0 7rem 0;
+}
+section {
+	min-height: 100%;
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+}
+.hr {
+	border-color: #f05f40;
+	border-width: .5rem;
+	max-width: 300px;
+}
+.btn {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.6rem;
+	border-radius: 2px;
+}
+#space-alert {
+	position: fixed;
+	width: 50%;
+	margin: 8rem 25%;
+	z-index: 100;
+	font-size: 1.7rem;
+}
+#loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 999;
+	background-image: url(../img/loading.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.btn-primary-medium {
+	background-color: #f05f40;
+	border-color: #f05f40;
+	color: #fff;
+	font-size: 2rem;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	padding: .8rem;
+	font-family: 'Oswald', sans-serif;
+	border-radius: 3px;
+}
+.btn-primary-giant {
+	background-color: #f05f40;
+	border-color: #f05f40;
+	color: #fff;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	padding: .8rem;
+	font-family: 'Oswald', sans-serif;
+	border-radius: 3px;
+}
+.main-title {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 5rem;
+	padding-top: 5rem;
+}
+#top p {
+	color: #eee;
+	font-size: 2.2rem;
+}
+.secondary-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 3rem;
+}
+#information {
+	font-size: 1.7rem;
+}
+#information ul {
+	padding-left: 1.5rem;
+}
+#yo {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	border: solid #f05f40 2px;
+}
+.social-icon {
+	display: block;
+	width: 45px;
+	height: 44px;
+	background-image: url(../img/social-icons/social-icons.svg);
+	background-color: #f05f40;
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	box-shadow: 0 .3rem .6rem rgba(0,0,0,.3);
+	transition: all .2s;
+}
+.social-icon:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+	transform: translateY(-.3rem);
+}
+.facebook {
+	background-position: -39px -40px;
+}
+.youtube {
+	background-position: -39px -100px;
+}
+.linkedin {
+	background-position: -399px -40px;
+}
+.github {
+	background-position: -159px -280px;
+}
+#social ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#social li {
+	display: inline-block;
+	padding: .5rem;
+}
+#social a {
+	width: 45px;
+	height: 45px;
+}
+#skills {
+	background-color: #f4f4f4;
+	font-size: 1.7rem;
+}
+#portfolio {
+	font-size: 1.5rem;
+}
+#portfolio a:hover,
+#portfolio a:focus {
+	text-decoration: none;
+}
+.portfolio-item {
+	background-color: #444;
+	color: #fff;
+	padding: 1.5rem 1.5rem 2rem 1.5rem;
+	margin-top: 2rem;
+	text-align: center;
+	border-radius: 2px;
+}
+.portfolio-item  img{
+	margin: 1.8rem 0;
+}
+.portfolio-item .btn {
+	margin: .5rem;
+}
+#contact {
+	background-color: #f4f4f4;
+	font-size: 1.7rem;
+}
+
+footer {
+	background-color: #222;
+	color: #fff;
+	padding-top: 1rem;
+}
+#navbar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 1.7rem;
+	z-index: 99;
+	background-color: #f05f40;
+	color: #fff;
+	display: none;
+	padding: .4rem;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+}
+#navbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#navbar li {
+	display: inline-block;
+	padding: 1rem;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+#navbar li:hover {
+	background-color: #444;
+	cursor: pointer;
+}
+.collapse {
+	display: block;
+}
+.nav-main button {
+	display: none;
+	float: right;
+	margin-top: .5rem;
+	background-color: #444;
+	color: #fff;
+	border-color: #444;
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+	#items-collapse li {
+		width: 100%;
+		clear: both;
+		text-align: left;
+	}
+	.navitems {
+		width: 100%;
+	}
+	.collapse {
+		display: none;
+	}
+	.nav-main ul {
+		display: inline-block;
+	}
+	.nav-main button {
+		display: block;
+	}
+
+	.clear-991 {
+		clear: left;
+	}
+}
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 4rem !important;
+	}
+
+}
+@media screen and (max-width: 600px) {
+	#portfolio .col-xs-6 {
+		width: 100%;
+		max-width: 400px;
+		display: table;
+		margin: 0 auto;
+		float: none;
+	}
+}
