@@ -400,13 +400,13 @@
             <!-- Porfolio item -->
             <div class="col-xs-6 col-md-3">
                 <div class="portfolio-item">
-                    <h4>Consultoría legal</h4>
-                    <img src="{{ asset('img/portfolio/consultoria.jpg') }}" class="img-responsive" alt="Consultoría legal" title="Consultoría legal">
+                    <h4>Clasificados</h4>
+                    <img src="{{ asset('img/portfolio/clasificados.jpg') }}" class="img-responsive" alt="Clasificados" title="Clasificados">
 
-                    <a href="https://github.com/emilioaor/consultoria-legal" class="btn btn-warning" target="_blank">
+                    <a href="https://github.com/emilioaor/clasificados" class="btn btn-warning" target="_blank">
                         Ver github
                     </a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#consultoriaModal">Ver demo</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#clasificadosModal">Ver demo</button>
                 </div>
             </div>
 
@@ -437,32 +437,6 @@
                         Ver github
                     </a>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cineencasaModal">Ver demo</button>
-                </div>
-            </div>
-
-            <!-- Porfolio item -->
-            <div class="col-xs-6 col-md-3 clear-991">
-                <div class="portfolio-item">
-                    <h4>Publica cumpleaños</h4>
-                    <img src="{{ asset('img/portfolio/cumple.jpg') }}" class="img-responsive" alt="Publica cumpleaños" title="Publica cumpleaños">
-
-                    <a href="https://github.com/emilioaor/laravel-lista-de-cumpleaneros" class="btn btn-warning" target="_blank">
-                        Ver github
-                    </a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cumpleModal">Ver demo</button>
-                </div>
-            </div>
-
-            <!-- Porfolio item -->
-            <div class="col-xs-6 col-md-3">
-                <div class="portfolio-item">
-                    <h4>Mundo acuario</h4>
-                    <img src="{{ asset('img/portfolio/mundo-acuario.jpg') }}" class="img-responsive" alt="Mundo acuario" title="Mundo acuario">
-
-                    <a href="https://github.com/emilioaor/mundo-acuario" class="btn btn-warning" target="_blank">
-                        Ver github
-                    </a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mundoacuarioModal">Ver demo</button>
                 </div>
             </div>
 
@@ -911,70 +885,54 @@
     </div>
 </div>
 
-<!-- Modal Consultoria -->
-<div id="consultoriaModal" class="modal fade" role="dialog">
+<!-- Modal clasificados -->
+<div id="clasificadosModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Consultoria legal</h4>
+                <h4 class="modal-title">Clasificados</h4>
             </div>
             <div class="modal-body">
-                <img src="{{ asset('img/portfolio/consultoria.jpg') }}" alt="Consultoria legal" class="img-responsive">
+                <img src="{{ asset('img/portfolio/clasificados.jpg') }}" alt="Crea tu cine online" class="img-responsive">
                 <hr>
 
                 <div class="row">
                     <div class="col-sm-6">
                         <p>
-                            <strong>Usuario:</strong> administrador	<br>
+                            <strong>Usuario:</strong> admin@mail.com	<br>
                             <strong>Contraseña:</strong> 123456
                         </p>
                     </div>
-
                     <div class="col-sm-6">
                         <p>
-                            <strong>Usuario:</strong> consultor	<br>
+                            <strong>Usuario:</strong> user@mail.com	<br>
                             <strong>Contraseña:</strong> 123456
                         </p>
                     </div>
-
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Usuario:</strong> usuario	<br>
-                            <strong>Contraseña:</strong> 123456
-                        </p>
-                    </div>
-
                 </div>
 
                 <hr>
-                <p>Aplicación para el control de solicitudes de consultoria legal. Este fue mi primer desarrollo</p>
-
-                <h5><strong>Usuario:</strong></h5>
-                <ul>
-                    <li>Registra solicitudes</li>
-                    <li>Genera cotizaciones</li>
-                </ul>
-
-                <h5><strong>Consultor:</strong></h5>
-                <ul>
-                    <li>Atiende las solicitudes</li>
-                    <li>Carga documentos</li>
-                </ul>
+                <p>Página web de clasificados, con pagos por paypal para publicaciones premium</p>
 
                 <h5><strong>Administrador:</strong></h5>
                 <ul>
-                    <li>Administra usuarios</li>
-                    <li>Administra empresas</li>
-                    <li>Administra representantes legales</li>
+                    <li>Agrega categorias, sub-categorias y opciones</li>
+                </ul>
+
+                <h5><strong>Usuario:</strong></h5>
+                <ul>
+                    <li>Crea publicaciones</li>
+                    <li>Maneja lista de deseos</li>
+                    <li>Pagos por Paypal</li>
                 </ul>
 
             </div>
             <div class="modal-footer">
-                <a href="" class="btn btn-primary" disabled>
-                    <i class="glyphicon glyphicon-eye-open"></i>	Demo en construcción
+                <a href="https://clasificados.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
+                    <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
@@ -1068,104 +1026,6 @@
             <div class="modal-footer">
                 <a href="https://cineencasa.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
-                </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
-                    <i class="glyphicon glyphicon-remove"></i>	Cerrar
-                </button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Modal cumple -->
-<div id="cumpleModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Cartelera de cumpleañeros</h4>
-            </div>
-            <div class="modal-body">
-                <img src="{{ asset('img/portfolio/cumple.jpg') }}" alt="Cartelera de cumpleañeros" class="img-responsive">
-                <hr>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Usuario:</strong> admin	<br>
-                            <strong>Contraseña:</strong> 123456
-                        </p>
-                    </div>
-                </div>
-
-                <hr>
-                <p>Pequeña cartelera de cumpleañeros autoadministrable, para login debe ir a la ruta <strong>auth/login</strong> manualmente</p>
-
-                <h5><strong>Unico nivel de usuario:</strong></h5>
-                <ul>
-                    <li>Administra los registro de los empleados</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="https://cumple.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
-                    <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
-                </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
-                    <i class="glyphicon glyphicon-remove"></i>	Cerrar
-                </button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Modal mundoacuario -->
-<div id="mundoacuarioModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Mundo acuario</h4>
-            </div>
-            <div class="modal-body">
-                <img src="{{ asset('img/portfolio/mundo-acuario.jpg') }}" alt="Mundo acuario" class="img-responsive">
-                <hr>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Usuario:</strong> administrador	<br>
-                            <strong>Contraseña:</strong> 123456
-                        </p>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Usuario:</strong> usuario	<br>
-                            <strong>Contraseña:</strong> 123456
-                        </p>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Usuario:</strong> vendedor	<br>
-                            <strong>Contraseña:</strong> 123456
-                        </p>
-                    </div>
-                </div>
-
-                <hr>
-                <p>Página para el control de solicitudes de venta con tematica de peces. Este es mi segundo desarrollo</p>
-
-            </div>
-            <div class="modal-footer">
-                <a href="" class="btn btn-primary" disabled>
-                    <i class="glyphicon glyphicon-eye-open"></i>	Demo en construcción
                 </a>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
