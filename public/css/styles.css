@@ -244,7 +244,7 @@ footer {
 		display: block;
 	}
 
-	.clear-991 {
+	.port-row .col-xs-6:nth-child(3){
 		clear: left;
 	}
 }

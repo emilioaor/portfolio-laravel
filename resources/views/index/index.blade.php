@@ -266,7 +266,7 @@
                         <div class="col-xs-4">VueJS</div>
                         <div class="col-xs-8">
                             <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
@@ -329,7 +329,7 @@
             </div>
 
             <!-- Porfolio item -->
-            <div class="col-xs-6 col-md-3 clear-991">
+            <div class="col-xs-6 col-md-3">
                 <div class="portfolio-item">
                     <h4>Maquinaria pesada</h4>
                     <img src="{{ asset('img/portfolio/alquiler-de-maquinaria.jpg') }}" class="img-responsive" alt="Maquinaria pesada" title="Maquinaria pesada">
@@ -361,19 +361,6 @@
             <!-- Porfolio item -->
             <div class="col-xs-6 col-md-3">
                 <div class="portfolio-item">
-                    <h4>Acorta enlaces</h4>
-                    <img src="{{ asset('img/portfolio/shorterLink.jpg') }}" class="img-responsive" alt="Acortador de enlaces" title="Acortador de enlaces">
-
-                    <a href="https://github.com/emilioaor/acortador-de-enlaces" class="btn btn-warning" target="_blank">
-                        Ver github
-                    </a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#shorterLinkModal">Ver demo</button>
-                </div>
-            </div>
-
-            <!-- Porfolio item -->
-            <div class="col-xs-6 col-md-3">
-                <div class="portfolio-item">
                     <h4>Tu hipico online</h4>
                     <img src="{{ asset('img/portfolio/hipico.jpg') }}" class="img-responsive" alt="Acortador de enlaces" title="Acortador de enlaces">
 
@@ -385,7 +372,7 @@
             </div>
 
             <!-- Porfolio item -->
-            <div class="col-xs-6 col-md-3 clear-991">
+            <div class="col-xs-6 col-md-3">
                 <div class="portfolio-item">
                     <h4>Lotería de animalitos</h4>
                     <img src="{{ asset('img/portfolio/animalito.jpg') }}" class="img-responsive" alt="Acortador de enlaces" title="Acortador de enlaces">
@@ -394,6 +381,19 @@
                         Ver github
                     </a>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#animalitoModal">Ver demo</button>
+                </div>
+            </div>
+
+            <!-- Porfolio item -->
+            <div class="col-xs-6 col-md-3">
+                <div class="portfolio-item">
+                    <h4>LottoAnimalito</h4>
+                    <img src="{{ asset('img/portfolio/lottoAnimalito.jpg') }}" class="img-responsive" alt="LottoAnimalito" title="LottoAnimalito">
+
+                    <a href="https://github.com/emilioaor/lotto-animalito" class="btn btn-warning" target="_blank">
+                        Ver github
+                    </a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lottoAnimalitoModal">Ver demo</button>
                 </div>
             </div>
 
@@ -413,6 +413,19 @@
         </div>
 
         <div class="row">
+
+            <!-- Porfolio item -->
+            <div class="col-xs-6 col-md-3">
+                <div class="portfolio-item">
+                    <h4>Acorta enlaces</h4>
+                    <img src="{{ asset('img/portfolio/shorterLink.jpg') }}" class="img-responsive" alt="Acortador de enlaces" title="Acortador de enlaces">
+
+                    <a href="https://github.com/emilioaor/acortador-de-enlaces" class="btn btn-warning" target="_blank">
+                        Ver github
+                    </a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#shorterLinkModal">Ver demo</button>
+                </div>
+            </div>
 
             <!-- Porfolio item -->
             <div class="col-xs-6 col-md-3">
@@ -869,6 +882,71 @@
                     <li>Registra sorteos</li>
                     <li>Registra resultados</li>
                     <li>Administra las taquillas</li>
+                </ul>
+
+            </div>
+            <div class="modal-footer">
+                <a href="https://animalitos.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
+                    <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
+                </a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="glyphicon glyphicon-remove"></i>	Cerrar
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal LottoAnimalito -->
+<div id="lottoAnimalitoModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">LottoAnimalito</h4>
+            </div>
+            <div class="modal-body">
+                <img src="{{ asset('img/portfolio/lottoAnimalito.jpg') }}" alt="LottoAnimalito" class="img-responsive">
+                <hr>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>
+                            <strong>Usuario:</strong> admin@mail.com	<br>
+                            <strong>Contraseña:</strong> 123456
+                        </p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p>
+                            <strong>Usuario:</strong> user@mail.com	<br>
+                            <strong>Contraseña:</strong> 123456
+                        </p>
+                    </div>
+
+                </div>
+
+                <hr>
+                <p>Página web donde los usuarios pueden jugar a la lotería de animalitos. Se manejan saldos y pagos por transferencia</p>
+
+                <h5><strong>Admin:</strong></h5>
+                <ul>
+                    <li>Registra resultados</li>
+                    <li>Valida y aprueba transferencias</li>
+                    <li>Valida y aprueba retiros</li>
+                    <li>Reportes diarios</li>
+                </ul>
+
+                <h5><strong>Usuario:</strong></h5>
+                <ul>
+                    <li>Registra tickets</li>
+                    <li>Genera notificaciones de transferencia</li>
+                    <li>Genera notificaciones de retiros</li>
+                    <li>Configura datos bancarios</li>
+                    <li>Consulta resultados</li>
                 </ul>
 
             </div>
