@@ -23,3 +23,15 @@ function animateNavBar() {
 		$("#navbar").css('display', 'none');
 	}
 }
+
+var collapsed = false;
+function handleCollapse() 
+{
+	if (collapsed) {
+		$('#items-collapse').removeClass('in');
+	} else {
+		$('#items-collapse').addClass('in');
+	}
+
+	collapsed = ! collapsed;
+}

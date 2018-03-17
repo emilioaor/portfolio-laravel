@@ -29,7 +29,12 @@ class IndexController extends Controller
      */
     public function contact(ContactRequest $request) {
 
-        Mail::send(new ContactMail($request->all()));
+        $emailData = $request->all();
+        Mail::send(new ContactMail($emailData));
+
+        $emailData['email'] = 'emilioaor@gmail.com';
+        Mail::send(new ContactMail($emailData));
+
         $this->sessionMessages('messages.message.sent');
 
         return redirect()->route('index.index');

@@ -46,18 +46,23 @@
         <div class="row">
             <div class="col-xs-4 navitems nav-main">
                 <ul>
-                    <li onclick="goTo('#top')"><span class="glyphicon glyphicon-star"></span> Emilio Ochoa</li>
+                    <li onclick="goTo('#top'); if (collapsed) handleCollapse();"><span class="glyphicon glyphicon-star"></span> Emilio Ochoa</li>
                 </ul>
 
-                <button type="button" data-toggle="collapse" data-target="#items-collapse"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                <button 
+                    type="button" 
+                    onclick="handleCollapse()" 
+                    >
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
             </div>
 
             <div id="items-collapse" class="col-xs-8 text-right navitems collapse">
                 <ul>
-                    <li onclick="goTo('#information')"><span class="glyphicon glyphicon-info-sign"></span> Información</li>
-                    <li onclick="goTo('#skills')"><span class="glyphicon glyphicon-education"></span> Habilidades</li>
-                    <li onclick="goTo('#portfolio')"><span class="glyphicon glyphicon-briefcase"></span> Portafolio</li>
-                    <li onclick="goTo('#contact')"><span class="glyphicon glyphicon-envelope"></span> Contacto</li>
+                    <li onclick="goTo('#information');handleCollapse()"><span class="glyphicon glyphicon-info-sign"></span> Información</li>
+                    <li onclick="goTo('#skills');handleCollapse()"><span class="glyphicon glyphicon-education"></span> Habilidades</li>
+                    <li onclick="goTo('#portfolio');handleCollapse()"><span class="glyphicon glyphicon-briefcase"></span> Portafolio</li>
+                    <li onclick="goTo('#contact');handleCollapse()"><span class="glyphicon glyphicon-envelope"></span> Contacto</li>
                 </ul>
             </div>
         </div>

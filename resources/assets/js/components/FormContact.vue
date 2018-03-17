@@ -12,14 +12,17 @@
                         id="name"
                         name="name"
                         v-validate
-                        data-vv-rules="required|max:20"
+                        data-vv-rules="required|max:30"
                         v-model="formContact.name"
                         v-bind:class="{'input-danger' : formContact.send && errors.has('name')}"
                         class="form-control"
                         placeholder="Mi nombre es Emilio Ochoa. ¿Y el tuyo?"
                         tabindex="1">
-                        <p class="text-danger error">
-                            <span v-show="formContact.send && errors.has('name')">Verifique este campo</span>
+                        <p class="text-danger error" v-if="formContact.send && errors.firstByRule('name', 'required')">
+                            Campo requerido
+                        </p>
+                        <p class="text-danger error" v-if="formContact.send && errors.firstByRule('name', 'max')">
+                            Maximo 30 caracteres
                         </p>
                 </div>
 
@@ -35,8 +38,8 @@
                         rows="4"
                         placeholder="¿Cuales son los objetivos que deseas alcanzar con tu pagina web?"
                         tabindex="3"></textarea>
-                        <p class="text-danger error">
-                            <span v-show="formContact.send && errors.has('goals')">Verifique este campo</span>
+                        <p class="text-danger error" v-if="formContact.send && errors.firstByRule('goals', 'required')">
+                            Campo requerido
                         </p>
                 </div>
 
@@ -52,28 +55,33 @@
                         rows="4"
                         placeholder="Pásame el link de una o mas paginas cuya estructura o diseño te agrade así no sea de tu rubro"
                         tabindex="5"></textarea>
-                        <p class="text-danger error">
-                            <span v-show="formContact.send && errors.has('references')">Verifique este campo</span>
+                        <p class="text-danger error" v-if="formContact.send && errors.firstByRule('references', 'required')">
+                            Campo requerido
                         </p>
                 </div>
 
-                <div class="form-group" tabindex="6">
+                <div class="form-group">
                     <select
                         name="amount"
                         id="amount"
+                        tabindex="6"
                         v-validate
-                        data-vv-rules="required"
+                        data-vv-rules="required|min:10"
                         v-model="formContact.amount"
                         v-bind:class="{'input-danger' : formContact.send && errors.has('amount')}"
-                        class="form-control">
-                            <option>¿Cuanto tenias pensado invertir?</option>
+                        class="form-control"
+                        >
+                            <option value="0">¿Cuanto tenias pensado invertir?</option>
                             <option>500.000 - 1.000.000 VEF</option>
                             <option>1.000.001 - 1.500.000 VEF</option>
                             <option>1.500.001 - 2.000.000 VEF</option>
                             <option>2.000.001 o mas VEF</option>
                     </select>
-                    <p class="text-danger error">
-                        <span v-show="formContact.send && errors.has('amount')">Verifique este campo</span>
+                    <p class="text-danger error" v-if="formContact.send && errors.firstByRule('amount', 'required')">
+                        Campo requerido
+                    </p>
+                    <p class="text-danger error" v-else-if="formContact.send && errors.firstByRule('amount', 'min')">
+                        Campo requerido
                     </p>
                 </div>
 
@@ -93,8 +101,11 @@
                         class="form-control"
                         placeholder="Email para poder comunicarnos"
                         tabindex="2">
-                        <p class="text-danger error">
-                            <span v-show="formContact.send && errors.has('email')">Verifique este campo</span>
+                        <p class="text-danger error" v-if="formContact.send && errors.firstByRule('email', 'required')">
+                            Campo requerido
+                        </p>
+                        <p class="text-danger error" v-else-if="formContact.send && errors.firstByRule('email', 'email')">
+                            Formato invalido
                         </p>
                 </div>
 
@@ -110,8 +121,8 @@
                         rows="4"
                         placeholder="Pásame el link de una o mas paginas de la competencia que consideres este haciendo un buen trabajo"
                         tabindex="4"></textarea>
-                        <p class="text-danger error">
-                            <span v-show="formContact.send && errors.has('references2')">Verifique este campo</span>
+                        <p class="text-danger error" v-if="formContact.send && errors.firstByRule('references2', 'required')">
+                            Campo requerido
                         </p>
                 </div>
 
@@ -127,8 +138,8 @@
                         rows="4"
                         placeholder="¿Algo mas que decir?. Este es el momento, deja todo los mas detallado posible para brindarte un mejor servicio"
                         tabindex="5"></textarea>
-                        <p class="text-danger error">
-                            <span v-show="formContact.send && errors.has('message')">Verifique este campo</span>
+                        <p class="text-danger error" v-if="formContact.send && errors.firstByRule('message', 'required')">
+                            Campo requerido
                         </p>
                 </div>
 
@@ -144,8 +155,8 @@
                         class="form-control"
                         placeholder="¿En cuanto tiempo esperas recibir tu proyecto culminado?"
                         tabindex="7">
-                        <p class="text-danger error">
-                            <span v-show="formContact.send && errors.has('endTime')">Verifique este campo</span>
+                        <p class="text-danger error" v-if="formContact.send && errors.firstByRule('endTime', 'required')">
+                            Campo requerido
                         </p>
                 </div>
             </div>
