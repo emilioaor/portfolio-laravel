@@ -26,11 +26,9 @@ mix
 
     // Unificar JS
     .scripts([
-        'public/js/jquery.js',
+        'public/js/app.js',
         'public/js/main.js',
         'public/slider/js/main.js',
-        'public/js/bootstrap.min.js',
-        'public/js/app.js'
     ], 'public/js/app.js')
 
 ;

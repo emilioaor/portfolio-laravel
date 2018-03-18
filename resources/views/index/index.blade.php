@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('slider/css/style.css') }}">
     -->
-    <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantata+One|Oswald|Roboto+Condensed">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantata+One|Oswald|Roboto+Condensed">
 </head>
 <body>
 
@@ -46,23 +46,18 @@
         <div class="row">
             <div class="col-xs-4 navitems nav-main">
                 <ul>
-                    <li onclick="goTo('#top'); if (collapsed) handleCollapse();"><span class="glyphicon glyphicon-star"></span> Emilio Ochoa</li>
+                    <li onclick="goTo('#top')"><span class="glyphicon glyphicon-star"></span> Emilio Ochoa</li>
                 </ul>
 
-                <button 
-                    type="button" 
-                    onclick="handleCollapse()" 
-                    >
-                    <span class="glyphicon glyphicon-menu-hamburger"></span>
-                </button>
+                <button type="button" data-toggle="collapse" data-target="#items-collapse"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
             </div>
 
             <div id="items-collapse" class="col-xs-8 text-right navitems collapse">
                 <ul>
-                    <li onclick="goTo('#information');handleCollapse()"><span class="glyphicon glyphicon-info-sign"></span> Información</li>
-                    <li onclick="goTo('#skills');handleCollapse()"><span class="glyphicon glyphicon-education"></span> Habilidades</li>
-                    <li onclick="goTo('#portfolio');handleCollapse()"><span class="glyphicon glyphicon-briefcase"></span> Portafolio</li>
-                    <li onclick="goTo('#contact');handleCollapse()"><span class="glyphicon glyphicon-envelope"></span> Contacto</li>
+                    <li onclick="goTo('#information')"><span class="glyphicon glyphicon-info-sign"></span> Información</li>
+                    <li onclick="goTo('#skills')"><span class="glyphicon glyphicon-education"></span> Habilidades</li>
+                    <li onclick="goTo('#portfolio')"><span class="glyphicon glyphicon-briefcase"></span> Portafolio</li>
+                    <li onclick="goTo('#contact')"><span class="glyphicon glyphicon-envelope"></span> Contacto</li>
                 </ul>
             </div>
         </div>
@@ -542,7 +537,7 @@
                 <a href="https://control-solicitudes.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -588,7 +583,7 @@
                 <a href="https://control-inventario.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -646,7 +641,7 @@
                 <a href="https://pec.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -718,7 +713,7 @@
                 <a href="https://maquinaria-pesada.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -765,7 +760,7 @@
                 <a href="https://acorta-enlaces.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -832,7 +827,7 @@
                 <a href="https://hipico.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -894,7 +889,7 @@
                 <a href="https://animalitos.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -959,7 +954,7 @@
                 <a href="https://animalitos.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -1017,7 +1012,7 @@
                 <a href="https://clasificados.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -1064,7 +1059,7 @@
                 <a href="https://crea-tu-cine.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
@@ -1110,7 +1105,7 @@
                 <a href="https://cineencasa.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
                     <i class="glyphicon glyphicon-remove"></i>	Cerrar
                 </button>
             </div>
