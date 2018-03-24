@@ -886,7 +886,7 @@
 
             </div>
             <div class="modal-footer">
-                <a href="https://animalitos.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
+                <a href="https://loteria.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
                 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
@@ -951,7 +951,7 @@
 
             </div>
             <div class="modal-footer">
-                <a href="https://animalitos.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
+                <a href="https://lotto-animalito.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
                     <i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
                 </a>
                 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$(body).attr('style', '')">
