@@ -305,13 +305,13 @@
             <!-- Porfolio item -->
             <div class="col-xs-6 col-md-3">
                 <div class="portfolio-item">
-                    <h4>Control de solicitudes</h4>
-                    <img src="{{ asset('img/portfolio/control-de-solicitudes2.jpg') }}" class="img-responsive" alt="Control de solicitudes" title="Control de solicitudes">
+                    <h4>Clasificados</h4>
+                    <img src="{{ asset('img/portfolio/clasificados.jpg') }}" class="img-responsive" alt="Clasificados" title="Clasificados">
 
-                    <a href="https://github.com/emilioaor/control-de-solicitudes" class="btn btn-warning" target="_blank">
+                    <a href="https://github.com/emilioaor/clasificados" class="btn btn-warning" target="_blank">
                         Ver github
                     </a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestControlModal">Ver demo</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#clasificadosModal">Ver demo</button>
                 </div>
             </div>
 
@@ -344,23 +344,6 @@
             <!-- Porfolio item -->
             <div class="col-xs-6 col-md-3">
                 <div class="portfolio-item">
-                    <h4>Procuraduría PEC</h4>
-                    <img src="{{ asset('img/portfolio/pec.jpg') }}" class="img-responsive" alt="Procuraduría PEC" title="Procuraduría PEC">
-
-                    <a href="https://github.com/emilioaor/pagina-de-noticias-pec" class="btn btn-warning" target="_blank">
-                        Ver github
-                    </a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pecModal">Ver demo</button>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <!-- Porfolio item -->
-            <div class="col-xs-6 col-md-3">
-                <div class="portfolio-item">
                     <h4>Tu hipico online</h4>
                     <img src="{{ asset('img/portfolio/hipico.jpg') }}" class="img-responsive" alt="Acortador de enlaces" title="Acortador de enlaces">
 
@@ -370,6 +353,10 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hipicoModal">Ver demo</button>
                 </div>
             </div>
+
+        </div>
+
+        <div class="row">
 
             <!-- Porfolio item -->
             <div class="col-xs-6 col-md-3">
@@ -400,13 +387,26 @@
             <!-- Porfolio item -->
             <div class="col-xs-6 col-md-3">
                 <div class="portfolio-item">
-                    <h4>Clasificados</h4>
-                    <img src="{{ asset('img/portfolio/clasificados.jpg') }}" class="img-responsive" alt="Clasificados" title="Clasificados">
+                    <h4>Control de solicitudes</h4>
+                    <img src="{{ asset('img/portfolio/control-de-solicitudes2.jpg') }}" class="img-responsive" alt="Control de solicitudes" title="Control de solicitudes">
 
-                    <a href="https://github.com/emilioaor/clasificados" class="btn btn-warning" target="_blank">
+                    <a href="https://github.com/emilioaor/control-de-solicitudes" class="btn btn-warning" target="_blank">
                         Ver github
                     </a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#clasificadosModal">Ver demo</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestControlModal">Ver demo</button>
+                </div>
+            </div>
+
+            <!-- Porfolio item -->
+            <div class="col-xs-6 col-md-3">
+                <div class="portfolio-item">
+                    <h4>Procuraduría PEC</h4>
+                    <img src="{{ asset('img/portfolio/pec.jpg') }}" class="img-responsive" alt="Procuraduría PEC" title="Procuraduría PEC">
+
+                    <a href="https://github.com/emilioaor/pagina-de-noticias-pec" class="btn btn-warning" target="_blank">
+                        Ver github
+                    </a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pecModal">Ver demo</button>
                 </div>
             </div>
 
