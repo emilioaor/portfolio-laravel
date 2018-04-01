@@ -72,10 +72,10 @@
                         class="form-control"
                         >
                             <option value="0">¿Cuanto tenias pensado invertir?</option>
-                            <option>500.000 - 1.000.000 VEF</option>
-                            <option>1.000.001 - 1.500.000 VEF</option>
-                            <option>1.500.001 - 2.000.000 VEF</option>
-                            <option>2.000.001 o mas VEF</option>
+                            <option>1.000.000 - 3.000.000 VEF</option>
+                            <option>3.000.001 - 6.000.000 VEF</option>
+                            <option>6.000.001 - 9.000.000 VEF</option>
+                            <option>9.000.001 o mas VEF</option>
                     </select>
                     <p class="text-danger error" v-if="formContact.send && errors.firstByRule('amount', 'required')">
                         Campo requerido
