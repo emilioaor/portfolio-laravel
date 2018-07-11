@@ -1120,7 +1120,7 @@
 <script src="{{ asset('js/main.js') }}"></script>
 <script src="{{ asset('slider/js/main.js') }}"></script>
 -->
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}?v1.0.0"></script>
 
 @if(Request::has('sec'))
     <script>
