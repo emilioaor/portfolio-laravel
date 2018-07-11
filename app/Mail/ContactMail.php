@@ -39,7 +39,7 @@ class ContactMail extends Mailable
     {
         return $this
             ->to([
-                $this->params['email']
+                $this->params['to']
             ])
             ->subject('Contacto con Emilio Ochoa')
             ->view('mail.contact')

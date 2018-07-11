@@ -30,9 +30,11 @@ class IndexController extends Controller
     public function contact(ContactRequest $request) {
 
         $emailData = $request->all();
+        $emailData['to'] = $emailData['email'];
+
         Mail::send(new ContactMail($emailData));
 
-        $emailData['email'] = 'emilioaor@gmail.com';
+        $emailData['to'] = 'emilioaor@gmail.com';
         Mail::send(new ContactMail($emailData));
 
         $this->sessionMessages('messages.message.sent');
